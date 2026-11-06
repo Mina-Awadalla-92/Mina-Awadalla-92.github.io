@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mina Awadalla | Software Developer</title>
-<meta name="description" content="Mina Awadalla: C# developer building scientific desktop software in Montreal, QC. CV, experience and projects.">
+<meta name="description" content="Mina Awadalla, Software Developer · C# / .NET · Performance &amp; GPU Computing. Based in Montreal, QC. CV, experience and projects.">
 <link rel="canonical" href="https://mina-awadalla-92.github.io/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235ee0b8'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Segoe UI,Arial,sans-serif' font-size='30' font-weight='700' fill='%2306231a'%3EMA%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Mina Awadalla | Software Developer">
-<meta property="og:description" content="Mina Awadalla: C# developer building scientific desktop software in Montreal, QC. CV, experience and projects.">
+<meta property="og:description" content="Mina Awadalla, Software Developer · C# / .NET · Performance &amp; GPU Computing. Based in Montreal, QC. CV, experience and projects.">
 <meta property="og:url" content="https://mina-awadalla-92.github.io/">
 <meta property="og:image" content="https://mina-awadalla-92.github.io/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Mina Awadalla, C# developer building scientific desktop software">
+<meta property="og:image:alt" content="Mina Awadalla, Software Developer · C# / .NET · Performance &amp; GPU Computing">
 <meta name="twitter:card" content="summary_large_image">
 <style>
 *, *::before, *::after { box-sizing: border-box; }
@@ -69,6 +69,7 @@ h3 { font-size: 1.1rem; font-weight: 600; color: var(--white); }
 .entry ul { margin-top: .6rem; }
 .entry li + li { margin-top: .3rem; }
 .entry li::marker { color: var(--accent); }
+.entry strong { color: var(--white); font-weight: 600; }
 #experience .items { position: relative; padding-left: 1.75rem; }
 #experience .items::before { content: ""; position: absolute; left: .32rem; top: .55rem; bottom: .5rem; width: 2px; background: var(--line); }
 #experience .entry { position: relative; }
@@ -99,34 +100,34 @@ dt { color: var(--white); font-weight: 600; margin-bottom: .55rem; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 
+@media screen { .print-resume { display: none; } }
 @media print {
-  @page { margin: 14mm; }
+  @page { size: letter; margin: 0; }
   :root { color-scheme: light; }
-  h2::before, h2::after, .entry::before, .items::before { content: none !important; }
-  .monogram, .toc { display: none !important; }
-  h2 { display: block !important; }
-  .hero-inner { max-height: none !important; overflow: visible !important; }
-  .contact { flex-direction: row !important; }
-  .contact a { padding: 0 !important; border: 0 !important; }
-  .entry-head { display: flex !important; }
-  dt { margin: 0 !important; }
-  .skill { margin-top: 3pt !important; }
-  .entry li::marker { color: #000 !important; }
-  html, body { background: #fff !important; color: #000 !important; }
-  body { display: block !important; font-size: 10.5pt !important; }
-  *, *::before, *::after { background: transparent !important; color: #000 !important;
-    box-shadow: none !important; border-color: #999 !important; }
-  .hero, .hero-inner, main, section { position: static !important; display: block !important;
-    width: auto !important; max-width: none !important; min-height: 0 !important;
-    height: auto !important; padding: 0 !important; margin: 0 !important; }
-  .hero { margin-bottom: 10pt !important; }
-  section { margin-top: 10pt !important; }
-  .items { display: block !important; padding: 0 !important; }
-  .entry { break-inside: avoid; margin: 0 0 7pt !important; padding: 0 !important; border: 0 !important; }
-  h2 { break-after: avoid; margin-bottom: 4pt !important; border-bottom: 1px solid #999 !important; }
-  h1 { font-size: 20pt !important; }
-  .contact a { text-decoration: none; }
-  .contact button { display: none; }
+  html, body { background: #fff !important; }
+  body { display: block !important; margin: 0 !important; padding: 0 !important; min-height: 0 !important; }
+  body > :not(.print-resume) { display: none !important; }
+  .print-resume { display: block; padding: .38in .57in .3in; color: #000; font-size: 9pt; line-height: 1.38;
+    font-family: "Open Sans", "Segoe UI", Arial, sans-serif;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .print-resume a { color: inherit; text-decoration: none; }
+  .print-resume p { margin: 0; }
+  .pr-name { font-family: Poppins, "Segoe UI", Arial, sans-serif; font-weight: 700; font-size: 25pt; line-height: 1.15; }
+  .pr-headline { color: #404040; font-size: 10.5pt; margin-top: 1pt; white-space: pre; }
+  .pr-contact { display: flex; justify-content: space-between; gap: 10pt; margin-top: 4pt; padding: 3pt 8pt;
+    background: #f2f2f2; font-size: 8.5pt; white-space: nowrap; }
+  .pr-contact a { display: inline-flex; align-items: center; gap: 5pt; }
+  .pr-icon { width: 15pt; height: 15pt; flex: none; }
+  .pr-section { margin-top: 5pt; }
+  .pr-bar { background: #a6a6a6; border-left: 1px solid #a6a6a6; padding: 1pt 4pt; margin-bottom: 3pt;
+    font-weight: 700; font-size: 11pt; text-transform: uppercase; break-after: avoid; }
+  .pr-row { display: flex; justify-content: space-between; gap: 12pt; margin-top: 3pt; font-weight: 700; font-size: 9.5pt; }
+  .pr-row span:last-child { white-space: nowrap; font-size: 9pt; }
+  .pr-org { color: #404040; font-size: 9.5pt; }
+  .print-resume ul { margin: 1pt 0 0; padding-left: 14pt; }
+  .print-resume li { break-inside: avoid; }
+  .print-resume li::marker { color: #000; }
+  .pr-skill { margin-bottom: 1.5pt !important; }
 }
 </style>
 </head>
@@ -134,9 +135,9 @@ dt { color: var(--white); font-weight: 600; margin-bottom: .55rem; }
   <header class="hero">
     <div class="hero-inner">
       <div class="monogram" aria-hidden="true">MA</div>
-      <p class="eyebrow">C# developer building scientific desktop software · Montreal, QC</p>
+      <p class="eyebrow">Software Developer · C# / .NET · Performance &amp; GPU Computing</p>
       <h1>Mina Awadalla</h1>
-      <p class="summary">Software developer building scientific desktop applications in C# and VB, including the CDEGS engineering software suite. Master&#x27;s student at Concordia University, where I created GpuGenerator, a C# code generator for GPU compute, for my thesis. Looking for a full-time software role.</p>
+      <p class="summary">Software developer with 3+ years building scientific C# / VB.NET desktop applications for electromagnetic, lightning and grounding analysis (CDEGS suite). MASc candidate at Concordia focused on GPU computing and high-performance C#.</p>
       <nav class="contact" aria-label="Contact">
         <a href="mailto:mina.hany@hotmail.com">mina.hany@hotmail.com</a>
         <a href="https://www.linkedin.com/in/mina-awadalla" rel="me">LinkedIn</a>
@@ -146,8 +147,8 @@ dt { color: var(--white); font-weight: 600; margin-bottom: .55rem; }
       <nav class="toc" aria-label="Sections">
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
         <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
       </nav>
     </div>
   </header>
@@ -156,86 +157,104 @@ dt { color: var(--white); font-weight: 600; margin-bottom: .55rem; }
         <article class="entry">
           <div class="entry-head">
             <h3>Software Developer</h3>
-            <p class="dates">March 2023 – Present</p>
+            <p class="dates">Mar 2023 – Present</p>
           </div>
           <p class="org">Safe Engineering Services &amp; Technologies Ltd., Montreal, QC</p>
-          <ul><li>Work on scientific products for the computation and visualization of electromagnetic interference, lightning and grounding phenomena.</li><li>Build components across the CDEGS software suite, including SESTransient, SESTrainSimulator, SESBatch, SESAmpacity and FFTSES.</li><li>Optimize and migrate existing code across these products.</li><li>Develop desktop applications in VB and C# using the MVVM pattern.</li><li>Design, develop and test software components so products meet customer requirements and industry standards.</li></ul>
+          <ul><li>Develop <strong>scientific desktop apps</strong> for electromagnetic, lightning and grounding analysis using <strong>C#, VB.NET and MVVM</strong>.</li><li>Contribute across the <strong>CDEGS suite</strong>: SESTransient, SESTrainSimulator, SESBatch, SESAmpacity and FFTSES.</li><li><strong>Optimize and migrate existing code</strong>, profiling bottlenecks and refining numerical algorithms with cross-functional teams.</li><li>Build <strong>visualization and UI features</strong> that turn complex simulation output into clear, actionable results.</li><li>Write <strong>unit tests and automated test scripts</strong> to protect the reliability of calculation engines across releases.</li></ul>
         </article>
         <article class="entry">
           <div class="entry-head">
             <h3>Full Stack Developer Intern</h3>
-            <p class="dates">May 2022 – August 2022</p>
+            <p class="dates">May 2022 – Aug 2022</p>
           </div>
           <p class="org">Plusgrade, Montreal, QC</p>
-          <ul><li>Developed and maintained the platform using Java and Maven.</li><li>Built a web application in TypeScript, with cloud hosting on AWS S3.</li><li>Implemented major new features and refactored existing code.</li></ul>
+          <ul><li>Built scalable web features with <strong>Java, Maven and TypeScript</strong> and optimized <strong>AWS S3</strong> bucket usage for cloud storage.</li><li>Led the integration of <strong>RESTful APIs</strong> to improve data retrieval efficiency across services.</li></ul>
         </article>
         <article class="entry">
           <div class="entry-head">
             <h3>Software Quality Assurance Intern</h3>
-            <p class="dates">January 2022 – April 2022</p>
+            <p class="dates">Jan 2022 – Apr 2022</p>
           </div>
           <p class="org">Matrox Inc., Montreal, QC</p>
-          <ul><li>Automated and developed procedures to validate the drivers and user interfaces of Matrox graphics products.</li><li>Debugged issues and reported the steps taken to resolve them.</li></ul>
+          <ul><li>Automated test scripts with <strong>Python and Selenium</strong>, expanding test coverage and reducing manual regression effort.</li><li>Managed defect tracking and reporting to streamline the QA process.</li></ul>
         </article>
     </div></section>
     <section id="projects"><h2>Projects</h2><div class="items">
         <article class="entry">
           <div class="entry-head">
             <h3>GpuGenerator</h3>
-            <p class="dates">May 2026 – Present</p>
+            <p class="dates">Jan 2026 – Present</p>
           </div>
-          <p class="org">Master&#x27;s thesis project · C#, .NET, Roslyn, ComputeSharp, Z3</p>
-          <ul><li>Build-time code generator that turns C# methods marked [GpuAccelerate] into ComputeSharp compute shaders.</li><li>Generates a dispatcher that learns at run time whether the CPU or GPU is faster and picks one for each call.</li><li>Uses the Z3 solver to try to prove each shader matches the original method; shaders it cannot prove fall back to a stub instead of shipping unverified.</li></ul>
+          <p class="org">Adaptive CPU/GPU Code Generation · C#, Roslyn, ComputeSharp, Z3</p>
+          <ul><li>Built a <strong>Roslyn-based code generator</strong> (MASc thesis) that turns C# methods into <strong>DirectX 12 compute shaders</strong>.</li><li>Designed a <strong>runtime adaptive dispatcher</strong> that benchmarks CPU vs. GPU and fits curves to learn the crossover point.</li><li>Verifies each shader with the <strong>Z3 solver</strong> and keeps it only when it is proven equivalent to the original method.</li></ul>
         </article>
         <article class="entry">
           <div class="entry-head">
-            <h3>Database Analysis</h3>
-            <p class="dates">July – August 2022</p>
+            <h3>Database Management System</h3>
+            <p class="dates">Sep 2023 – Dec 2023</p>
           </div>
           <p class="org">PHP, MySQL</p>
-          <ul><li>Website with different user privileges.</li><li>Stores data and retrieves it through different queries per user type.</li></ul>
+          <ul><li>Built a <strong>database-driven web app</strong> with role-based access, <strong>complex SQL reporting queries</strong> and stored procedures.</li></ul>
         </article>
         <article class="entry">
           <div class="entry-head">
-            <h3>Image Classification AI Model</h3>
-            <p class="dates">May – June 2022</p>
+            <h3>AI Image Classification Model</h3>
+            <p class="dates">Jan 2023 – Apr 2023</p>
           </div>
-          <p class="org">Python</p>
-          <ul><li>Recognizes different types of masks.</li><li>Model trained on a dataset of mask images.</li></ul>
+          <p class="org">Python, TensorFlow, AWS Lambda</p>
+          <ul><li>Built a <strong>CNN</strong> to classify mask types and deployed it with <strong>Flask and AWS Lambda</strong> for scalable API access.</li></ul>
         </article>
         <article class="entry">
           <div class="entry-head">
-            <h3>Warzone Game Simulation</h3>
-            <p class="dates">September – December 2021</p>
+            <h3>CLI Warzone Game</h3>
+            <p class="dates">Sep 2022 – Dec 2022</p>
           </div>
           <p class="org">C++</p>
-          <ul><li>Command-line simulation of the Warzone game, split into maps, characters and rules.</li><li>Applied multiple inheritance, pointers and different containers.</li></ul>
+          <ul><li>Built a <strong>turn-based strategy game</strong> with a custom map and character system, using <strong>OOP, pointers and STL containers</strong>.</li></ul>
+        </article>
+        <article class="entry">
+          <div class="entry-head">
+            <h3>E-Commerce Platform</h3>
+            <p class="dates">Jan 2022 – Apr 2022</p>
+          </div>
+          <p class="org">React, Node.js, MongoDB</p>
+          <ul><li>Built a full-stack store supporting <strong>1,000+ products</strong> with secure payments and <strong>JWT authentication</strong>.</li></ul>
         </article>
     </div></section>
-    <section id="skills"><h2>Skills</h2><div class="items"><dl><div class="skill"><dt>Languages</dt><dd><span class="chip">C#</span> <span class="chip">Visual Basic</span> <span class="chip">Java</span> <span class="chip">C</span> <span class="chip">C++</span> <span class="chip">Python</span> <span class="chip">SQL</span> <span class="chip">LINQ</span> <span class="chip">Prolog</span> <span class="chip">Lisp</span></dd></div><div class="skill"><dt>Web</dt><dd><span class="chip">React</span> <span class="chip">TypeScript</span> <span class="chip">JavaScript</span> <span class="chip">HTML</span> <span class="chip">CSS</span> <span class="chip">PHP</span></dd></div><div class="skill"><dt>Tools</dt><dd><span class="chip">.NET</span> <span class="chip">Roslyn</span> <span class="chip">ComputeSharp</span> <span class="chip">Z3</span> <span class="chip">AWS S3</span> <span class="chip">Firebase</span> <span class="chip">MySQL</span> <span class="chip">Maven</span> <span class="chip">GitHub</span> <span class="chip">Eclipse</span> <span class="chip">Photoshop</span> <span class="chip">Microsoft Office</span></dd></div><div class="skill"><dt>Foundations</dt><dd><span class="chip">MVVM</span> <span class="chip">object-oriented programming</span> <span class="chip">data structures and algorithms</span> <span class="chip">operating systems</span> <span class="chip">computer networks</span> <span class="chip">information retrieval</span> <span class="chip">AI and machine learning</span> <span class="chip">theoretical computer science</span></dd></div><div class="skill"><dt>Spoken</dt><dd><span class="chip">Arabic (native)</span> <span class="chip">English (spoken and written)</span> <span class="chip">French (beginner)</span></dd></div></dl></div></section>
     <section id="education"><h2>Education</h2><div class="items">
         <article class="entry">
           <div class="entry-head">
-            <h3>Master of Applied Science, Software Engineering (Thesis, in progress)</h3>
-            <p class="dates">Expected Winter 2027</p>
+            <h3>MASc, Software Engineering (Thesis)</h3>
+            <p class="dates">Jan 2025 – Expected Winter 2027</p>
           </div>
-          <p class="org">Concordia University, Montreal, Quebec</p>
+          <p class="org">Concordia University, Montreal</p>
         </article>
         <article class="entry">
           <div class="entry-head">
             <h3>Bachelor of Computer Science</h3>
             <p class="dates">2020 – 2023</p>
           </div>
-          <p class="org">Concordia University, Montreal, Quebec</p>
+          <p class="org">Concordia University, Montreal</p>
         </article>
         <article class="entry">
           <div class="entry-head">
             <h3>Bachelor of Arts, Tourism and Hotel Management</h3>
             <p class="dates">2009 – 2013</p>
           </div>
-          <p class="org">Alexandria University, Alexandria, Egypt</p>
+          <p class="org">Alexandria University, Egypt</p>
         </article>
     </div></section>
+    <section id="skills"><h2>Skills</h2><div class="items"><dl><div class="skill"><dt>Languages</dt><dd><span class="chip">C#</span> <span class="chip">VB.NET</span> <span class="chip">Java</span> <span class="chip">Python</span> <span class="chip">C++</span> <span class="chip">JavaScript</span> <span class="chip">TypeScript</span> <span class="chip">SQL</span> <span class="chip">HLSL</span></dd></div><div class="skill"><dt>.NET &amp; Performance</dt><dd><span class="chip">MVVM</span> <span class="chip">Roslyn</span> <span class="chip">ComputeSharp</span> <span class="chip">DirectX 12 compute</span> <span class="chip">Z3 SMT solver</span> <span class="chip">parallel programming</span></dd></div><div class="skill"><dt>Web &amp; Cloud</dt><dd><span class="chip">React</span> <span class="chip">Node.js</span> <span class="chip">PHP</span> <span class="chip">REST APIs</span> <span class="chip">SQL Server</span> <span class="chip">MySQL</span> <span class="chip">MongoDB</span> <span class="chip">AWS (EC2, S3, Lambda)</span> <span class="chip">Docker</span> <span class="chip">Jenkins</span></dd></div><div class="skill"><dt>Practices &amp; Tools</dt><dd><span class="chip">OOP</span> <span class="chip">design patterns</span> <span class="chip">data structures &amp; algorithms</span> <span class="chip">unit testing</span> <span class="chip">Git</span> <span class="chip">GitHub Actions</span> <span class="chip">Jira</span> <span class="chip">Visual Studio</span></dd></div><div class="skill"><dt>Spoken Languages</dt><dd><span class="chip">English (fluent)</span> <span class="chip">Arabic (native)</span> <span class="chip">French (beginner)</span></dd></div></dl></div></section>
   </main>
+  <div class="print-resume" aria-hidden="true">
+    <div class="pr-name">Mina Awadalla</div>
+    <div class="pr-headline">Software Developer  |  C# / .NET  |  Performance &amp; GPU Computing</div>
+    <div class="pr-contact"><a href="mailto:mina.hany@hotmail.com"><svg class="pr-icon" viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="27" fill="#b5b5b5"/><rect x="15" y="18" width="24" height="18" rx="2.5"/><path d="M16 20l11 8.5L38 20" fill="none" stroke="#b5b5b5" stroke-width="2.6"/></svg>mina.hany@hotmail.com</a><a href="https://mina-awadalla-92.github.io/"><svg class="pr-icon" viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="27" fill="#b5b5b5"/><g fill="none" stroke="#000" stroke-width="2.6"><circle cx="27" cy="27" r="13"/><ellipse cx="27" cy="27" rx="5.6" ry="13"/><path d="M14 27h26M16 20.5h22M16 33.5h22"/></g></svg>mina-awadalla-92.github.io</a><a href="https://www.linkedin.com/in/mina-awadalla"><svg class="pr-icon" viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="27" fill="#b5b5b5"/><text x="27" y="35.5" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="24" letter-spacing="-0.5">in</text></svg>in/mina-awadalla</a><a href="https://github.com/Mina-Awadalla-92"><svg class="pr-icon" viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="27" fill="#b5b5b5"/><mask id="pr-gh"><rect width="54" height="54" fill="#fff"/><path transform="translate(11 11) scale(2)" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></mask><circle cx="27" cy="27" r="15.6" mask="url(#pr-gh)"/></svg>Mina-Awadalla-92</a></div>
+    <div class="pr-section"><div class="pr-bar">Summary</div><p>Software developer with 3+ years building scientific C# / VB.NET desktop applications for electromagnetic, lightning and grounding analysis (CDEGS suite). MASc candidate at Concordia focused on GPU computing and high-performance C#.</p></div>
+    <div class="pr-section"><div class="pr-bar">Experience</div><div class="pr-row"><span>Software Developer</span><span>Mar 2023 – Present</span></div><div class="pr-org">Safe Engineering Services &amp; Technologies Ltd. — Montreal, QC</div><ul><li>Develop <strong>scientific desktop apps</strong> for electromagnetic, lightning and grounding analysis using <strong>C#, VB.NET and MVVM</strong>.</li><li>Contribute across the <strong>CDEGS suite</strong>: SESTransient, SESTrainSimulator, SESBatch, SESAmpacity and FFTSES.</li><li><strong>Optimize and migrate existing code</strong>, profiling bottlenecks and refining numerical algorithms with cross-functional teams.</li><li>Build <strong>visualization and UI features</strong> that turn complex simulation output into clear, actionable results.</li><li>Write <strong>unit tests and automated test scripts</strong> to protect the reliability of calculation engines across releases.</li></ul><div class="pr-row"><span>Full Stack Developer Intern</span><span>May 2022 – Aug 2022</span></div><div class="pr-org">Plusgrade — Montreal, QC</div><ul><li>Built scalable web features with <strong>Java, Maven and TypeScript</strong> and optimized <strong>AWS S3</strong> bucket usage for cloud storage.</li><li>Led the integration of <strong>RESTful APIs</strong> to improve data retrieval efficiency across services.</li></ul><div class="pr-row"><span>Software Quality Assurance Intern</span><span>Jan 2022 – Apr 2022</span></div><div class="pr-org">Matrox Inc. — Montreal, QC</div><ul><li>Automated test scripts with <strong>Python and Selenium</strong>, expanding test coverage and reducing manual regression effort.</li><li>Managed defect tracking and reporting to streamline the QA process.</li></ul></div>
+    <div class="pr-section"><div class="pr-bar">Projects</div><div class="pr-row"><span>GpuGenerator — Adaptive CPU/GPU Code Generation (C#, Roslyn, ComputeSharp, Z3)</span><span>Jan 2026 – Present</span></div><ul><li>Built a <strong>Roslyn-based code generator</strong> (MASc thesis) that turns C# methods into <strong>DirectX 12 compute shaders</strong>.</li><li>Designed a <strong>runtime adaptive dispatcher</strong> that benchmarks CPU vs. GPU and fits curves to learn the crossover point.</li><li>Verifies each shader with the <strong>Z3 solver</strong> and keeps it only when it is proven equivalent to the original method.</li></ul><div class="pr-row"><span>Database Management System (PHP, MySQL)</span><span>Sep 2023 – Dec 2023</span></div><ul><li>Built a <strong>database-driven web app</strong> with role-based access, <strong>complex SQL reporting queries</strong> and stored procedures.</li></ul><div class="pr-row"><span>AI Image Classification Model (Python, TensorFlow, AWS Lambda)</span><span>Jan 2023 – Apr 2023</span></div><ul><li>Built a <strong>CNN</strong> to classify mask types and deployed it with <strong>Flask and AWS Lambda</strong> for scalable API access.</li></ul><div class="pr-row"><span>CLI Warzone Game (C++)</span><span>Sep 2022 – Dec 2022</span></div><ul><li>Built a <strong>turn-based strategy game</strong> with a custom map and character system, using <strong>OOP, pointers and STL containers</strong>.</li></ul><div class="pr-row"><span>E-Commerce Platform (React, Node.js, MongoDB)</span><span>Jan 2022 – Apr 2022</span></div><ul><li>Built a full-stack store supporting <strong>1,000+ products</strong> with secure payments and <strong>JWT authentication</strong>.</li></ul></div>
+    <div class="pr-section"><div class="pr-bar">Education</div><div class="pr-row"><span>MASc, Software Engineering (Thesis) — Concordia University, Montreal</span><span>Jan 2025 – Expected Winter 2027</span></div><div class="pr-row"><span>Bachelor of Computer Science — Concordia University, Montreal</span><span>2020 – 2023</span></div><div class="pr-row"><span>Bachelor of Arts, Tourism and Hotel Management — Alexandria University, Egypt</span><span>2009 – 2013</span></div></div>
+    <div class="pr-section"><div class="pr-bar">Skills</div><p class="pr-skill"><strong>Languages:</strong> C#, VB.NET, Java, Python, C++, JavaScript, TypeScript, SQL, HLSL</p><p class="pr-skill"><strong>.NET &amp; Performance:</strong> MVVM, Roslyn, ComputeSharp, DirectX 12 compute, Z3 SMT solver, parallel programming</p><p class="pr-skill"><strong>Web &amp; Cloud:</strong> React, Node.js, PHP, REST APIs, SQL Server, MySQL, MongoDB, AWS (EC2, S3, Lambda), Docker, Jenkins</p><p class="pr-skill"><strong>Practices &amp; Tools:</strong> OOP, design patterns, data structures &amp; algorithms, unit testing, Git, GitHub Actions, Jira, Visual Studio</p><p class="pr-skill"><strong>Spoken Languages:</strong> English (fluent), Arabic (native), French (beginner)</p></div>
+  </div>
 </body>
 </html>
